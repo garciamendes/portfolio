@@ -6,7 +6,7 @@ export default defineConfig({
     globals: true,
     setupFiles: "./src/setupTests.ts",
     coverage: {
-      reporter: ["text", "lcov", "json-summary", "json"],
+      reporter: ["text", "lcov"],
       reportOnFailure: true,
       include: ["src/**/*.{ts,tsx}"],
       exclude: ["src/main.tsx", "src/vite-env.d.ts"],
