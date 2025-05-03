@@ -32,8 +32,13 @@ jobs:
       - name: Run format
         run: npm run format
 
-      - name: Run tests
+      - name: Run tests with coverage
         run: npm test
+
+      - name: Report coverage
+        uses: davelosert/vitest-coverage-report@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         run: npm run build
