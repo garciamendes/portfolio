@@ -45,26 +45,10 @@ jobs:
       - name: Run tests with coverage
         run: npm run test
 
-      - name: 'Upload Coverage'
-        if: env.ACT != 'true'
-        uses: actions/upload-artifact@v4
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
         with:
-          name: coverage-pull-request
-          path: coverage
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Build
         run: npm run build
-
-  report-coverage:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Download Coverage Artifacts'
-        uses: actions/download-artifact@v4
-        with:
-          name: coverage-pull-request # Apenas baixe o coverage para o pull request
-          path: coverage
-      - name: 'Report Coverage'
-        uses: davelosert/vitest-coverage-report-action@v2
-        with:
-          json-summary-compare-path: coverage/coverage-summary.json
