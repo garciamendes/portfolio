@@ -1,10 +1,7 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
   test:
@@ -13,9 +10,21 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
+        include:
+          - branch: main
+            artifact: main
+          - branch: ${{ github.head_ref }}
+            artifact: pull-request
+
+    permissions:
+      contents: read
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+          ## Set repository to correctly checkout from forks
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -33,12 +42,31 @@ jobs:
         run: npm run format
 
       - name: Run tests with coverage
-        run: npm test
+        run: npx vitest --coverage.enabled true
 
-      - name: Report coverage
-        uses: davelosert/vitest-coverage-report@v2
+      - name: 'Upload Coverage'
+        uses: actions/upload-artifact@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          name: coverage-${{ matrix.artifact }}
+          path: coverage
 
       - name: Build
         run: npm run build
+
+  report-coverage:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Download Coverage Artifacts'
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-pull-request
+          path: coverage
+      - uses: actions/download-artifact@v4
+        with:
+          name: coverage-main
+          path: coverage-main
+      - name: 'Report Coverage'
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          json-summary-compare-path: coverage-main/coverage-summary.json

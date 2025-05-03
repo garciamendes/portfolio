@@ -6,9 +6,16 @@ export default defineConfig({
     globals: true,
     setupFiles: "./src/setupTests.ts",
     coverage: {
-      reporter: ["text", "lcov"],
+      reporter: ["text", "lcov", "json-summary", "json"],
+      reportOnFailure: true,
       include: ["src/**/*.{ts,tsx}"],
       exclude: ["src/main.tsx", "src/vite-env.d.ts"],
+      thresholds: {
+        lines: 60,
+        branches: 60,
+        functions: 60,
+        statements: 60,
+      },
     },
   },
 });
