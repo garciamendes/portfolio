@@ -1,7 +1,7 @@
 import { useTranslation as useTranslationI18 } from 'react-i18next'
 
 export const useTranslation = () => {
-  const { t } = useTranslationI18()
+  const trans = useTranslationI18()
 
-  return { gettext: t }
+  return { gettext: trans.t, ...trans }
 }
