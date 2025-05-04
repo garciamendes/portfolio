@@ -1,4 +1,3 @@
-import './App.css'
 import { AppVersion } from './components/version'
 
 function App() {
