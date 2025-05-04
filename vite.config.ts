@@ -4,7 +4,7 @@ import packageJson from './package.json'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/postfolio/',
   define: {
     __APP_VERSION__: JSON.stringify(packageJson.version),
   },
