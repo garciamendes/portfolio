@@ -1,0 +1,13 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "knowledge": "Knowledge",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "download": {
+      "resume": "Resume"
+    }
+  }
+}

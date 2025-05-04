@@ -1,13 +1,21 @@
 import Logo from '../../assets/images/logo.svg'
+import { useTranslation } from '../../hooks/useTranslation'
 import { DowndloadCv } from './downloadCv'
 
 export const Header = () => {
+  const { gettext } = useTranslation()
+
   return (
     <header className="flex items-center w-full justify-between h-20">
       <img className="h-8" src={Logo} alt="Logo" loading="eager" />
 
       <ul className="flex items-center gap-8 font-semibold text-base">
-        {['Home', 'Conhecimentos', 'Projetos', 'Contato'].map((item) => (
+        {[
+          gettext('header.nav.home'),
+          gettext('header.nav.knowledge'),
+          gettext('header.nav.projects'),
+          gettext('header.nav.contact'),
+        ].map((item) => (
           <li key={item}>
             <a href={`#${item}`} className="relative group px-1">
               {item}

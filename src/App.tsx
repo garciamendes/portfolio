@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Header } from './sections/header'
 import './styles/globals.css'
+import './i18n'
 
 function App() {
   useEffect(() => {

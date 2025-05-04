@@ -23,27 +23,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">14.28% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">3/21</span>
+            <span class="fraction">27/27</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">0/0</span>
+            <span class="fraction">2/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">0/1</span>
+            <span class="fraction">1/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">14.28% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">3/21</span>
+            <span class="fraction">27/27</span>
           </div>
         </div>
         <p class="quiet">
@@ -57,7 +57,7 @@
           </div>
         </template>
       </div>
-      <div class="status-line low"></div>
+      <div class="status-line high"></div>
       <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,64 +88,82 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Logo from '../../assets/images/logo.svg'
+import { useTranslation } from '../../hooks/useTranslation'
 import { DowndloadCv } from './downloadCv'
 &nbsp;
-export const Header = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
+export const Header = () =&gt; {
+  const { gettext } = useTranslation()
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;header className="flex items-center w-full justify-between h-20"&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;img className="h-8" src={Logo} alt="Logo" loading="eager" /&gt;</span>
+  return (
+    &lt;header className="flex items-center w-full justify-between h-20"&gt;
+      &lt;img className="h-8" src={Logo} alt="Logo" loading="eager" /&gt;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      &lt;ul className="flex items-center gap-8 font-semibold text-base"&gt;</span>
-<span class="cstat-no" title="statement not covered" >        {['Home', 'Conhecimentos', 'Projetos', 'Contato'].map((item) =&gt; (</span>
-<span class="cstat-no" title="statement not covered" >          &lt;li key={item}&gt;</span>
-<span class="cstat-no" title="statement not covered" >            &lt;a href={`#${item}`} className="relative group px-1"&gt;</span>
-<span class="cstat-no" title="statement not covered" >              {item}</span>
-<span class="cstat-no" title="statement not covered" >              &lt;span</span>
-<span class="cstat-no" title="statement not covered" >                className="absolute left-0 bottom-0 h-0.5 bg-black w-0</span>
+      &lt;ul className="flex items-center gap-8 font-semibold text-base"&gt;
+        {[
+          gettext('header.nav.home'),
+          gettext('header.nav.knowledge'),
+          gettext('header.nav.projects'),
+          gettext('header.nav.contact')].map((item) =&gt; (
+            &lt;li key={item}&gt;
+              &lt;a href={`#${item}`} className="relative group px-1"&gt;
+                {item}
+                &lt;span
+                  className="absolute left-0 bottom-0 h-0.5 bg-black w-0
                            transition-all duration-300
                            group-hover:w-full group-hover:left-0
                            group-not-hover:w-0 group-not-hover:left-full"
-<span class="cstat-no" title="statement not covered" >              &gt;&lt;/span&gt;</span>
-<span class="cstat-no" title="statement not covered" >            &lt;/a&gt;</span>
-<span class="cstat-no" title="statement not covered" >          &lt;/li&gt;</span>
-<span class="cstat-no" title="statement not covered" >        ))}</span>
-<span class="cstat-no" title="statement not covered" >      &lt;/ul&gt;</span>
+                &gt;&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          ))}
+      &lt;/ul&gt;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      &lt;DowndloadCv /&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/header&gt;</span>
+      &lt;DowndloadCv /&gt;
+    &lt;/header&gt;
   )
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -160,7 +178,7 @@ export const Header = <span class="fstat-no" title="function not covered" >() =&
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-05-04T05:02:31.182Z
+      at 2025-05-04T20:00:44.746Z
     </div>
     <script src="../../../prettify.js"></script>
     <script>

@@ -1,20 +1,29 @@
-import { useState } from 'react'
-import animDowloadCv from '../../assets/animations/download-cv.json'
-import animWaitDownloadCv from '../../assets/animations/wait-download-cv.json'
+import { useState, useEffect } from 'react'
 import Lottie from 'react-lottie'
 import { AnimatePresence, motion } from 'motion/react'
+
+import animDowloadCv from '../../assets/animations/download-cv.json'
+import animWaitDownloadCv from '../../assets/animations/wait-download-cv.json'
+import { useTranslation } from '../../hooks/useTranslation'
 import cv from '../../assets/cv/Matheus_Garcia.pdf'
 
 export const DowndloadCv = () => {
+  const { gettext } = useTranslation()
   const [isDownloading, setIsDownloading] = useState(false)
+  const waitingTime = process.env.NODE_ENV === 'test' ? 100 : 8500
+
+  useEffect(() => {
+    if (isDownloading) {
+      const timer = setTimeout(() => {
+        setIsDownloading(false)
+        window.open(cv, '_blank')
+      }, waitingTime)
+      return () => clearTimeout(timer)
+    }
+  }, [isDownloading, waitingTime])
 
   const handleDownload = () => {
     setIsDownloading(true)
-
-    setTimeout(() => {
-      setIsDownloading(false)
-      window.open(cv, '_blank')
-    }, 8500)
   }
 
   const downloadCvOptions = {
@@ -38,6 +47,7 @@ export const DowndloadCv = () => {
     <motion.button
       onClick={handleDownload}
       disabled={isDownloading}
+      data-testid="download-button"
       animate={{ width: isDownloading ? 130 : 150 }}
       transition={{ duration: 0.3 }}
       data-download-loading={isDownloading}
@@ -53,7 +63,7 @@ export const DowndloadCv = () => {
             transition={{ duration: 0.3 }}
             className="flex items-center gap-2"
           >
-            <span className="text-lg">Currículo</span>
+            <span className="text-lg">{gettext('header.download.resume')}</span>
             <Lottie options={downloadCvOptions} width={25} height={35} />
           </motion.div>
         ) : (
