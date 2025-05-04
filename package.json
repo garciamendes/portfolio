@@ -63,5 +63,6 @@
       "npm run lint",
       "npm run format"
     ]
-  }
+  },
+  "homepage": "https://garciamendes.github.io/postfolio"
 }
