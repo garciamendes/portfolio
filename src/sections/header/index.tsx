@@ -1,15 +1,15 @@
 import Logo from '../../assets/images/logo.svg'
 import { useTranslation } from '../../hooks/useTranslation'
-import { DowndloadCv } from './downloadCv'
+import { DownloadCv } from './downloadCv'
 
 export const Header = () => {
   const { gettext } = useTranslation()
 
   return (
     <header className="flex items-center w-full justify-between h-20">
-      <img className="h-8" src={Logo} alt="Logo" loading="eager" />
+      <img className="h-8 hidden " src={Logo} alt="Logo" loading="eager" />
 
-      <ul className="flex items-center gap-8 font-semibold text-base">
+      <ul className="hidden md:flex items-center gap-8 font-semibold text-base">
         {[
           gettext('header.nav.home'),
           gettext('header.nav.knowledge'),
@@ -30,7 +30,7 @@ export const Header = () => {
         ))}
       </ul>
 
-      <DowndloadCv />
+      <DownloadCv />
     </header>
   )
 }

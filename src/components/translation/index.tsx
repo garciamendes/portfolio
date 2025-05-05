@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Languages } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from '../../hooks/useTranslation'
+import { Translate } from '@phosphor-icons/react'
 
 export const Translation = () => {
   const { i18n } = useTranslation()
@@ -57,9 +57,9 @@ export const Translation = () => {
         className="
           p-2 rounded-full bg-white border shadow hover:bg-gray-100
           cursor-pointer data-[open=true]:bg-black data-[open=true]:text-white duration-300"
-        whileTap={{ scale: 1 }}
+        whileTap={{ scale: 1.2 }}
       >
-        <Languages />
+        <Translate size={25} />
       </motion.button>
     </div>
   )
