@@ -7,7 +7,7 @@ import animWaitDownloadCv from '../../assets/animations/wait-download-cv.json'
 import { useTranslation } from '../../hooks/useTranslation'
 import cv from '../../assets/cv/Matheus_Garcia.pdf'
 
-export const DowndloadCv = () => {
+export const DownloadCv = () => {
   const { gettext } = useTranslation()
   const [isDownloading, setIsDownloading] = useState(false)
   const waitingTime = process.env.NODE_ENV === 'test' ? 100 : 8500
@@ -48,10 +48,9 @@ export const DowndloadCv = () => {
       onClick={handleDownload}
       disabled={isDownloading}
       data-testid="download-button"
-      animate={{ width: isDownloading ? 130 : 150 }}
       transition={{ duration: 0.3 }}
       data-download-loading={isDownloading}
-      className="flex overflow-hidden items-center bg-black text-white font-semibold rounded-sm py-2 px-4 data-[download-loading=trie]:px-0 cursor-pointer"
+      className="flex overflow-hidden items-center justify-center w-full md:w-[150px] bg-black text-white font-semibold rounded-sm py-2 px-4 data-[download-loading=true]:px-0 cursor-pointer"
     >
       <AnimatePresence mode="wait">
         {!isDownloading ? (

@@ -9,5 +9,9 @@
     "download": {
       "resume": "Currículo"
     }
+  },
+  "home": {
+    "apresentation": "Olá, sou Matheus Garcia. Desenvolvedor FullStack.",
+    "resumeAbout": "Apaixonado por tecnologia e programação, movido pelo desafio de transformar ideias em soluções que fazem a diferença. Encontro na constante evolução desse universo a motivação para seguir aprendendo, criando e crescendo, sempre em busca de novos aprendizados e desafios."
   }
 }

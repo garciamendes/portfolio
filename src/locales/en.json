@@ -9,5 +9,9 @@
     "download": {
       "resume": "Resume"
     }
+  },
+  "home": {
+    "apresentation": "Hello, i'am Matheus Garcia. FullStack Developer.",
+    "resumeAbout": "Passionate about technology and programming, driven by the challenge of turning ideas into solutions that make a difference. I find motivation in the constant evolution of this field, always eager to keep learning, creating, and growing, while seeking new knowledge and challenges"
   }
 }

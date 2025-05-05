@@ -4,8 +4,17 @@ import './styles/globals.css'
 import './i18n'
 import { MenuPopup } from './sections/menuPopup'
 import { Translation } from './components/translation'
+import { useTranslation } from './hooks/useTranslation'
+import { Home } from './sections/home'
 
 function App() {
+  const { i18n } = useTranslation()
+
+  useEffect(() => {
+    i18n.changeLanguage('pt')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   useEffect(() => {
     const updateFavicon = () => {
       const favicon = document.getElementById('logo-icon') as HTMLLinkElement
@@ -36,14 +45,9 @@ function App() {
         <Translation />
       </div>
 
-      <div className="flex flex-col w-[1280px]">
+      <div className="flex flex-col w-full p-3 md:p-none md:w-[1280px]">
         <Header />
-
-        <div className="flex flex-col gap-3">
-          {Array.from({ length: 300 }).map((_, index) => (
-            <span>{index}</span>
-          ))}
-        </div>
+        <Home />
       </div>
     </main>
   )
