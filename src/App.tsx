@@ -15,28 +15,6 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => {
-    const updateFavicon = () => {
-      const favicon = document.getElementById('logo-icon') as HTMLLinkElement
-      const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-      if (darkMode) {
-        favicon.href = `${favicon.baseURI}src/assets/images/logo-light.svg`
-      } else {
-        favicon.href = `${favicon.baseURI}src/assets/images/logo.svg`
-      }
-    }
-
-    updateFavicon()
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    mediaQuery.addEventListener('change', updateFavicon)
-
-    return () => {
-      mediaQuery.removeEventListener('change', updateFavicon)
-    }
-  }, [])
-
   return (
     <main className="flex justify-center w-full relative">
       <MenuPopup />

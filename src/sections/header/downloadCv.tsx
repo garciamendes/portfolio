@@ -16,8 +16,10 @@ export const DownloadCv = () => {
     if (isDownloading) {
       const timer = setTimeout(() => {
         setIsDownloading(false)
-        window.open(cv, '_blank')
+        const link = document.querySelector('a#cv') as HTMLAnchorElement
+        link?.click()
       }, waitingTime)
+
       return () => clearTimeout(timer)
     }
   }, [isDownloading, waitingTime])
@@ -75,6 +77,16 @@ export const DownloadCv = () => {
             className="flex items-center"
           >
             <Lottie options={waitDownloadCvOptions} width={100} height={35} />
+            <a
+              id="cv"
+              download
+              href={cv}
+              aria-hidden="true"
+              hidden
+              className="hidden"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
           </motion.div>
         )}
       </AnimatePresence>
