@@ -16,15 +16,15 @@
   },
   "experience": {
     "accenture": {
-      "position": "FULLSTACK DEVELOPER - MID-LEVEL",
+      "position": "SOFTWARE DEVELOPER - MID-LEVEL",
       "startDate": "Sep/2021",
       "endDate": "Present",
       "descriptions": {
-        "description_count_1": "Development of projects in the information security area using Python, Django, React JS, and TypeScript;",
-        "description_count_2": "Project leadership, responsible for planning, architecting, and developing the system, as well as working directly with stakeholders;",
-        "description_count_3": "Involvement in the creation of the Design System, from planning to completion;",
-        "description_count_4": "Support in the development of junior professionals, with emphasis on coding best practices and problem solving;",
-        "description_count_5": "Code and PR review with a focus on applying best practices."
+        "description_count_1": "Fullstack developer with solid experience in building scalable and secure solutions, working with technologies such as Python, Django, React JS, and TypeScript.",
+        "description_count_2": "Led strategic projects in the information security domain, being responsible for system development and direct collaboration with stakeholders.",
+        "description_count_3": "Actively contributed to the creation of a complete Design System, ensuring visual consistency and product scalability.",
+        "description_count_4": "Performed code reviews and PR evaluations, with a strong focus on best development practices, code readability, and performance.",
+        "description_count_5": "Regular participation in agile squads, collaborating with cross-functional teams to deliver continuous value to the customer."
       }
     },
     "space": {

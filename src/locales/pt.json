@@ -16,15 +16,15 @@
   },
   "experience": {
     "accenture": {
-      "position": "DESENVOLVEDOR FULLSTACK - PLENO",
+      "position": "DESENVOLVEDOR DE SOFTWARE - PLENO",
       "startDate": "Set/2021",
       "endDate": "Atualmente",
       "descriptions": {
-        "description_count_1": "Desenvolvimento de projetos na área de segurança da informação utilizando Python, Django, React JS e Typescript;",
-        "description_count_2": "Atuação na liderança de um projeto, sendo responsável por planejar, arquitetar e desenvolver o sistema, além de trabalhar diretamente com stakeholders;",
-        "description_count_3": "Atuação na criação do Design System, desde o planejamento até a conclusão;",
-        "description_count_4": "Apoio no desenvolvimento de profissionais juniores, com ênfase em boas práticas de codificação e solução de problemas;",
-        "description_count_5": "Revisão de código e PRs com foco na aplicação de boas práticas."
+        "description_count_1": "Desenvolvedor Fullstack com experiência sólida no desenvolvimento de soluções escaláveis e seguras, atuando com tecnologias como Python, Django, React JS e TypeScript.",
+        "description_count_2": "Liderança de projetos estratégicos na área de segurança da informação, sendo responsável pelo desenvolvimento de sistemas, além de atuar diretamente com stakeholders.",
+        "description_count_3": "Participação ativa na criação de um Design System completo, garantindo consistência visual e escalabilidade entre produtos.",
+        "description_count_4": "Atuação em code reviews e revisões de PRs, com foco em boas práticas de desenvolvimento, legibilidade e performance do código.",
+        "description_count_5": "Participação constante em squads ágeis, colaborando com equipes multidisciplinares para entrega contínua de valor ao cliente."
       }
     },
     "space": {
