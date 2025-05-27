@@ -52,7 +52,7 @@ export const DownloadCv = () => {
       data-testid="download-button"
       transition={{ duration: 0.3 }}
       data-download-loading={isDownloading}
-      className="flex overflow-hidden items-center justify-center w-full md:w-[150px] bg-black text-white font-semibold rounded-sm py-2 px-4 data-[download-loading=true]:px-0 cursor-pointer"
+      className="flex overflow-hidden items-center justify-center w-full lg:w-[150px] bg-black text-white font-semibold rounded-sm py-2 px-4 data-[download-loading=true]:px-0 cursor-pointer"
     >
       <AnimatePresence mode="wait">
         {!isDownloading ? (

@@ -11,10 +11,17 @@
     }
   },
   "home": {
-    "apresentation": "Olá, sou Matheus Garcia. Desenvolvedor FullStack.",
+    "apresentation": {
+      "header": "Olá, sou <name>Matheus Garcia</name>.",
+      "highlight": "<primary>Desenvolvedor de</primary> <outline>Software</outline>"
+    },
     "resumeAbout": "Apaixonado por tecnologia e programação, movido pelo desafio de transformar ideias em soluções que fazem a diferença. Encontro na constante evolução desse universo a motivação para seguir aprendendo, criando e crescendo, sempre em busca de novos aprendizados e desafios."
   },
+  "skills": {
+    "title": "Habilidades"
+  },
   "experience": {
+    "title": "Experiência Profissional",
     "accenture": {
       "position": "DESENVOLVEDOR DE SOFTWARE - PLENO",
       "startDate": "Set/2021",
@@ -42,6 +49,15 @@
       "descriptions": {
         "description_count_1": "Desenvolvimento de projetos utilizando Python, Django, Next JS e Typescript;"
       }
+    }
+  },
+  "about_me": {
+    "title": "Sobre mim",
+    "description": {
+      "header": "Desenvolvedor de Software com base sólida em tecnologias modernas de front-end e back-end.",
+      "paragraphs_count_1": "Iniciei minha trajetória em tecnologia com o curso de Redes de Computadores, mas foi no desenvolvimento de software que encontrei minha verdadeira vocação: criar soluções funcionais, escaláveis e que gerem impacto real no dia a dia das pessoas.",
+      "paragraphs_count_2": "Tenho experiência prática com <strong>React.js</strong>, <strong>Next.js</strong>, <strong>React Native</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Django</strong> e <strong>Django REST Framework</strong>, além de ferramentas como <strong>TailwindCss</strong>, <strong>Styled Components</strong>, <strong>Sass</strong> e boas práticas de arquitetura e versionamento.",
+      "paragraphs_count_3": "Sou comprometido com a entrega de valor, aprendizado contínuo e trabalho colaborativo. Busco constantemente evoluir minhas habilidades técnicas e contribuir ativamente para a construção de produtos de alta qualidade."
     }
   }
 }

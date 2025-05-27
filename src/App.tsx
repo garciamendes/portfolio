@@ -8,6 +8,7 @@ import { useTranslation } from './hooks/useTranslation'
 import { Home } from './sections/home'
 import { SkillsSection } from './sections/skills'
 import { Experience } from './sections/experience'
+import { AboutMeSection } from './sections/aboutMe'
 
 function App() {
   const { i18n } = useTranslation()
@@ -25,13 +26,17 @@ function App() {
         <Translation />
       </div>
 
-      <div className="flex flex-col w-full mx-auto pt-3 pb-9 px-3 md:p-none md:w-[1280px]">
+      <div className="flex flex-col w-full mx-auto pt-3 pb-9 px-3 md:p-none lg:w-[1280px]">
         <Header />
         <Home />
         <SkillsSection />
       </div>
 
       <Experience />
+
+      <div className="flex flex-col w-full mx-auto pt-3 pb-9 px-3 md:p-none lg:w-[1280px]">
+        <AboutMeSection />
+      </div>
     </main>
   )
 }
