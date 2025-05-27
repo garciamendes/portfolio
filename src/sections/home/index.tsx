@@ -9,9 +9,10 @@ export const Home = () => {
   return (
     <div className="flex flex-col-reverse gap-8 md:gap-0 mt-4 md:mt-0 md:flex-row justify-between items-center w-full h-auto md:min-h-[643px]">
       <div className="flex flex-col justify-center gap-8 h-full">
-        <span className="flex max-w-[585px] text-5xl/normal">
+        <span className="flex max-w-[585px] text-3xl md:text-5xl/normal">
           {gettext('home.apresentation')}
         </span>
+
         <p className="text-zinc-500 max-w-[600px]">
           {gettext('home.resumeAbout')}
         </p>

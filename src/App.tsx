@@ -2,10 +2,11 @@ import { useEffect } from 'react'
 import { Header } from './sections/header'
 import './styles/globals.css'
 import './i18n'
-import { MenuPopup } from './sections/menuPopup'
+import { ScrollToHome } from './sections/scrollTohome'
 import { Translation } from './components/translation'
 import { useTranslation } from './hooks/useTranslation'
 import { Home } from './sections/home'
+import { SkillsSection } from './sections/skills'
 
 function App() {
   const { i18n } = useTranslation()
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <main className="flex justify-center w-full relative">
-      <MenuPopup />
+      <ScrollToHome />
 
       <div className="fixed bottom-5 left-5">
         <Translation />
@@ -26,6 +27,7 @@ function App() {
       <div className="flex flex-col w-full p-3 md:p-none md:w-[1280px]">
         <Header />
         <Home />
+        <SkillsSection />
       </div>
     </main>
   )

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowUp } from '@phosphor-icons/react'
 
-export const MenuPopup = () => {
+export const ScrollToHome = () => {
   const [showMenu, setShowMenu] = useState(false)
 
   useEffect(() => {
