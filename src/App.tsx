@@ -7,6 +7,7 @@ import { Translation } from './components/translation'
 import { useTranslation } from './hooks/useTranslation'
 import { Home } from './sections/home'
 import { SkillsSection } from './sections/skills'
+import { Experience } from './sections/experience'
 
 function App() {
   const { i18n } = useTranslation()
@@ -17,18 +18,20 @@ function App() {
   }, [])
 
   return (
-    <main className="flex justify-center w-full relative">
+    <main className="flex flex-col justify-center w-full relative">
       <ScrollToHome />
 
       <div className="fixed bottom-5 left-5">
         <Translation />
       </div>
 
-      <div className="flex flex-col w-full p-3 md:p-none md:w-[1280px]">
+      <div className="flex flex-col w-full mx-auto pt-3 pb-9 px-3 md:p-none md:w-[1280px]">
         <Header />
         <Home />
         <SkillsSection />
       </div>
+
+      <Experience />
     </main>
   )
 }

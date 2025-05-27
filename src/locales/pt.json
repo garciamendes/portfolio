@@ -13,5 +13,35 @@
   "home": {
     "apresentation": "Olá, sou Matheus Garcia. Desenvolvedor FullStack.",
     "resumeAbout": "Apaixonado por tecnologia e programação, movido pelo desafio de transformar ideias em soluções que fazem a diferença. Encontro na constante evolução desse universo a motivação para seguir aprendendo, criando e crescendo, sempre em busca de novos aprendizados e desafios."
+  },
+  "experience": {
+    "accenture": {
+      "position": "DESENVOLVEDOR FULLSTACK - PLENO",
+      "startDate": "Set/2021",
+      "endDate": "Atualmente",
+      "descriptions": {
+        "description_count_1": "Desenvolvimento de projetos na área de segurança da informação utilizando Python, Django, React JS e Typescript;",
+        "description_count_2": "Atuação na liderança de um projeto, sendo responsável por planejar, arquitetar e desenvolver o sistema, além de trabalhar diretamente com stakeholders;",
+        "description_count_3": "Atuação na criação do Design System, desde o planejamento até a conclusão;",
+        "description_count_4": "Apoio no desenvolvimento de profissionais juniores, com ênfase em boas práticas de codificação e solução de problemas;",
+        "description_count_5": "Revisão de código e PRs com foco na aplicação de boas práticas."
+      }
+    },
+    "space": {
+      "position": "DESENVOLVEDOR FRONTEND - JÚNIOR",
+      "startDate": "Mar/2021",
+      "endDate": "Jul/2021",
+      "descriptions": {
+        "description_count_1": "Desenvolvimento de projetos utilizando React JS, Typescript e Firebase;"
+      }
+    },
+    "freelancer": {
+      "position": "DESENVOLVEDOR FREELANCER",
+      "startDate": "Jul/2023",
+      "endDate": "Dez/2023",
+      "descriptions": {
+        "description_count_1": "Desenvolvimento de projetos utilizando Python, Django, Next JS e Typescript;"
+      }
+    }
   }
 }

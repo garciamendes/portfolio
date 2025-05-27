@@ -37,7 +37,7 @@ export const ScrollToHome = () => {
             bg-black text-white
             flex items-center justify-center
             rounded-full shadow-lg
-            p-2.5 cursor-pointer
+            p-2.5 cursor-pointer border border-zinc-300
           "
         >
           <ArrowUp />
