@@ -59,5 +59,17 @@
       "paragraphs_count_2": "Tenho experiência prática com <strong>React.js</strong>, <strong>Next.js</strong>, <strong>React Native</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Django</strong> e <strong>Django REST Framework</strong>, além de ferramentas como <strong>TailwindCss</strong>, <strong>Styled Components</strong>, <strong>Sass</strong> e boas práticas de arquitetura e versionamento.",
       "paragraphs_count_3": "Sou comprometido com a entrega de valor, aprendizado contínuo e trabalho colaborativo. Busco constantemente evoluir minhas habilidades técnicas e contribuir ativamente para a construção de produtos de alta qualidade."
     }
+  },
+  "contact": {
+    "title": "Contato",
+    "inputs": {
+      "name": "Seu nome",
+      "email": "Seu email",
+      "message": "Messagem"
+    },
+    "button": {
+      "loading": "Enviando...",
+      "placeholder": "Enviar"
+    }
   }
 }

@@ -19,6 +19,13 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+
+      - name: Inject .env variables
+        run: |
+          echo "VITE_SERVICE_ID=${{ secrets.VITE_SERVICE_ID }}" >> .env
+          echo "VITE_TEMPLATE_ID=${{ secrets.VITE_TEMPLATE_ID }}" >> .env
+          echo "VITE_PUBLIC_KEY=${{ secrets.VITE_PUBLIC_KEY }}" >> .env
+
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

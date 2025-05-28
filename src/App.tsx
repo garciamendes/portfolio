@@ -9,6 +9,7 @@ import { Home } from './sections/home'
 import { SkillsSection } from './sections/skills'
 import { Experience } from './sections/experience'
 import { AboutMeSection } from './sections/aboutMe'
+import Contact from './sections/contact'
 
 function App() {
   const { i18n } = useTranslation()
@@ -36,6 +37,7 @@ function App() {
 
       <div className="flex flex-col w-full mx-auto pt-3 pb-9 px-3 md:p-none lg:w-[1280px]">
         <AboutMeSection />
+        <Contact />
       </div>
     </main>
   )

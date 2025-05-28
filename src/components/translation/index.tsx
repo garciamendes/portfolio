@@ -21,7 +21,7 @@ export const Translation = () => {
       await i18n.changeLanguage(data)
       setIsOpen(false)
       setTrigger(false)
-    }, 1100)
+    }, 1050)
   }
 
   return (
